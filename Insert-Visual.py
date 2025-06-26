@@ -23,22 +23,9 @@ def inorder_traversal(root):
 
 # ---------- Plain-text vertical printer ----------
 def print_tree(root):
-    """
-    Display the tree top-down with / and \ branches.
-    Example:
-           10
-       /        \
-      5          15
-    /  \        /  \
-    3   7     12   18
-    """
+
     def _build(node):
-        """
-        Returns (lines, width, root_pos) where
-            lines    : list[str]  – each row of the subtree drawing
-            width    : int        – total char width of this block
-            root_pos : int        – horizontal index of root in first line
-        """
+
         if node is None:
             return [], 0, 0
 
